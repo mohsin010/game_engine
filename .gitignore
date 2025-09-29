@@ -1,0 +1,183 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.signing
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Build artifacts
+build/
+dist/
+*.o
+*.exe
+
+# Model files (large)
+*.gguf
+*.bin
+*.safetensors
+
+# Log files
+*.log
+logs/
+
+# Package files
+*.tar.gz
+*.zip
+*.rar
+
+# Wallet seeds and keys (security)
+*seed*
+*key*
+*wallet*
+
+# But allow certain config files
+!.env.example
+!package.json
+!package-lock.json
+
+##############################
+# Added extended ignores
+##############################
+
+# Python caches & environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+.envrc
+.poetry/
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+.pytype/
+.dmypy.json
+
+# Python notebooks
+.ipynb_checkpoints/
+
+# General caches
+.cache/
+.parcel-cache/
+.eslintcache
+
+# JS/TS build systems
+.next/
+.nuxt/
+.out/
+.svelte-kit/
+webpack-stats.json
+
+# C / C++ build (CMake & others)
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+Makefile
+CMakeScripts/
+Testing/
+*.dir/
+compile_commands.json
+install_manifest.txt
+CTestTestfile.cmake
+*.a
+*.la
+*.lo
+*.obj
+*.dll
+*.dylib
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.manifest
+*.map
+*.gcno
+*.gcda
+
+# LLaMA / model build outputs
+/game_engine/llama.cpp/build/
+/game_engine/llama.cpp/build-*/
+/game_engine/llama.cpp/out/
+/game_engine/llama.cpp/ggml-build/
+/game_engine/llama.cpp/models/
+
+# Local engine integrated build outputs
+/game_engine/build_integrated.sh.log
+/game_engine/build/integrated/
+
+# HotPocket / runtime ephemeral data
+/game_engine/hotpocket_deployment/*.pid
+/game_engine/hotpocket_deployment/*_runtime/
+
+# Editor / tooling
+*.iml
+*.orig
+*.rej
+
+# Crash / debug dumps
+*.dmp
+*.stackdump
+
+# Archive / backups
+*.bak
+*.old
+*.backup
+
+# Lock / state files (generated)
+poetry.lock
+Pipfile.lock
+package-lock.json
+pnpm-lock.yaml
+bun.lockb
+# (allow committed root JS lockfiles already whitelisted above if needed)
+
+# Local test artifacts
+*.test.out
+*.prof
+
+# Security / signing
+*.pem
+*.crt
+*.der
+*.csr
+*.pfx
+*.p12
+
+# Ignore any large raw model conversion intermediates
+*converted-gguf*
+*temporary-model*
+
+# System specific
+Thumbs.db:encryptable
+$RECYCLE.BIN/
+
+# End of file

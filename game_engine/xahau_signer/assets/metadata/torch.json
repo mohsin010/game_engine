@@ -1,0 +1,12 @@
+{
+  "name": "Ancient Torch",
+  "description": "A rusty but reliable torch that provided light in the dangerous Crystal Cave depths. A symbol of preparation and survival.",
+  "image": "placeholder_for_ipfs_upload",
+  "attributes": [
+    { "trait_type": "Rarity", "value": "Common" },
+    { "trait_type": "Game", "value": "Crystal Cave" },
+    { "trait_type": "Item Type", "value": "Tool" },
+    { "trait_type": "Function", "value": "Light Source" },
+    { "trait_type": "Category", "value": "Utility" }
+  ]
+}

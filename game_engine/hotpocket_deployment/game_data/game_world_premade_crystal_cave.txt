@@ -1,0 +1,86 @@
+Game Title: Crystal Cave Treasure Hunt
+
+World Description: A mysterious underground cave system with magical crystal formations. Four connected chambers hold ancient treasures and secrets. The crystals provide dim light but also pose dangers to the unwary explorer.
+
+World Lore: Long ago, a powerful wizard hid the legendary Crystal of Power in these caves, protected by magical wards and hidden passages.
+
+Objectives: Find the Crystal of Power hidden deep in the cave and return safely to the entrance to win.
+
+Win Conditions: Possess the Crystal of Power in your inventory AND be at Cave_Entrance location.
+Game Over Condition: Win in 10 turns otherwise game is over.
+
+Current_World_State: {
+  "Cave_Entrance": {
+    "base_description": "A wide cave entrance with natural light filtering in. You can see worn stone steps leading deeper into the cave to the north.",
+    "item_descriptions": {
+      "torch": "A rusty torch lies on the ground, waiting to be picked up."
+    },
+    "exits": ["north"],
+    "safe": true,
+    "visited": true,
+    "items_present": ["torch"]
+  },
+  "Main_Chamber": {
+    "base_description": "A large chamber with glowing crystal formations on the walls providing dim blue light. The crystals hum with magical energy. Passages lead east toward danger, west toward mystery, and south back to safety.",
+    "item_descriptions": {
+      "rope": "A coiled rope sits in the corner."
+    },
+    "exits": ["south", "east", "west"],
+    "safe": true,
+    "visited": false,
+    "items_present": ["rope"]
+  },
+  "Crystal_Chamber": {
+    "base_description": "A breathtaking but dangerous chamber filled with massive crystals. The magical energy here drains your strength, causing you to lose 10 health per turn.",
+    "item_descriptions": {
+      "crystal_of_power": "The Crystal of Power pulses with brilliant magical energy at the center of the room, casting rainbow lights on the walls."
+    },
+    "exits": ["west"],
+    "safe": false,
+    "health_penalty": 10,
+    "visited": false,
+    "items_present": ["crystal_of_power"]
+  },
+  "Hidden_Passage": {
+    "base_description": "A narrow hidden passage behind a crystal formation. Ancient symbols are carved into the walls, glowing faintly with residual magic.",
+    "item_descriptions": {
+      "magic_key": "A magic key glints in an alcove, as if placed there by the wizard long ago."
+    },
+    "exits": ["east"],
+    "safe": true,
+    "visited": false,
+    "items_present": ["magic_key"]
+  }
+}
+
+Items: {
+  "torch": {
+    "description": "Provides light and can be used as a weapon.",
+    "usable": true,
+    "weapon": true
+  },
+  "rope": {
+    "description": "Can be used to climb or secure items.",
+    "usable": true
+  },
+  "crystal_of_power": {
+    "description": "The magical artifact needed to win the game.",
+    "winning_item": true,
+    "magical": true
+  },
+  "magic_key": {
+    "description": "Opens hidden compartments and secret passages.",
+    "usable": true,
+    "key": true
+  }
+}
+
+Game_Rules: {
+  "starting_location": "Cave_Entrance",
+  "starting_health": 100,
+  "starting_inventory": [],
+  "health_loss_unsafe": 10,
+  "win_condition_item": "crystal_of_power",
+  "win_condition_location": "Cave_Entrance",
+  "lose_condition_health": 0
+}

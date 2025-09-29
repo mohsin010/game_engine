@@ -1,0 +1,10 @@
+{
+  "completion_time": 1758687122,
+  "final_health": "90",
+  "final_location": "Cave_Entrance",
+  "final_score": "0",
+  "game_id": "premade_crystal_cave",
+  "player_inventory": "[torch, magic_key, crystal_of_power]",
+  "status": "won",
+  "winning_action": "Exit the cave and get outside"
+}

@@ -1,0 +1,6 @@
+{
+    "contract": {
+        "bin_path": "./run_contract.sh",
+        "bin_args": ""
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Crystal of Power",
+  "description": "The legendary Crystal of Power, pulsing with brilliant magical energy. The ultimate treasure hidden by an ancient wizard - a symbol of victory and mastery over the Crystal Cave's dangers.",
+  "image": "placeholder_for_ipfs_upload",
+  "attributes": [
+    {"trait_type": "Rarity", "value": "Legendary"},
+    {"trait_type": "Game", "value": "Crystal Cave"},
+    {"trait_type": "Item Type", "value": "Winning Artifact"},
+    {"trait_type": "Function", "value": "Victory Trophy"},
+    {"trait_type": "Magic", "value": "Ancient Wizard Power"},
+    {"trait_type": "Category", "value": "Legendary Treasure"},
+    {"trait_type": "Achievement", "value": "Game Winner"}
+  ]
+}

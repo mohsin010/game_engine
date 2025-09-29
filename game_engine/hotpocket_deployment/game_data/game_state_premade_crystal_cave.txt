@@ -1,0 +1,7 @@
+Player_Location: Cave_Entrance
+Player_Health: 100
+Player_Score: 0
+Player_Inventory: []
+Game_Status: active
+Messages: ["Welcome to the Crystal Cave! You stand at the entrance of an ancient cave system. The air is cool and you can hear the faint sound of dripping water echoing from within. A rusty torch lies at your feet. Type your action to begin exploring."]
+Turn_Count: 0
